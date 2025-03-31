@@ -52,6 +52,7 @@
       &.buy {
         padding: 1.5rem 3rem;
         background-color: var(--snitap-sun);
+        width: 17.75rem;
       }
 
       &.play span {
@@ -59,6 +60,10 @@
         border-radius: 50%;
         background-color: white;
         display: flex;
+      }
+
+      &.play {
+        width: 17.75rem;
       }
 
       &:hover {
@@ -217,16 +222,28 @@
   }
 }
 
-@media (width <= 500px) {
+@media (width <= 1000px) {
+  .hero {
+    & .buttons {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (width <= 700px) {
   .hero {
     flex-direction: column-reverse;
 
-    & > div:nth-child(2) {
-      height: 28.5rem;
-    }
-
     & .buttons {
       flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (width <= 500px) {
+  .hero {
+    & > div:nth-child(2) {
+      height: 28.5rem;
     }
   }
 }
