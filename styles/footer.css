@@ -90,3 +90,19 @@ footer {
     }
   }
 }
+
+@media (width <= 500px) {
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+    & nav {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+    }
+    & .social-links {
+      margin-left: -0.55rem;
+    }
+  }
+}

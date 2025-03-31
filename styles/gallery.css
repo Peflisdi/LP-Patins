@@ -101,3 +101,18 @@
     transform: translateY(100%);
   }
 }
+
+@media (width <= 500px) {
+  .gallery {
+    & .content {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-areas:
+        "A"
+        "B"
+        "C"
+        "D";
+      gap: 2.5rem;
+    }
+  }
+}
